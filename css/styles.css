@@ -1,25 +1,47 @@
 html{
     font-size: 20px;
 }
+body{
+     font-family: "Montserrat",sans-serif; 
+     text-align: center;
+}
 
-#title{
+h1, h2, h3, h4, h5, h6{
+    font-family: "Montserrat-bold",sans-serif;  
+}
+
+p{
+    color: #8f8f8f;
+    margin:5%;
+}
+
+/* HEADING  */
+.big-heading{
+    font-family: "Montserrat-Black",sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: bolder;
+}
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* Container  */
+
+.container-fluid{
+    padding: 7% 15% ;
+}
+
+/* section  */
+
+.colored-section{
     background-color: #ff4c68;
     color: #fff; 
 }
 
-.container-fluid{
-    padding: 3% 15%;
-}
-
-#phrase{
-    font-family: "Montserrat-Black",sans-serif;
-    size: 3rem;
-    line-height: 1.5;
-    font-weight: bolder;
-}
-
-body{
-    /* font-family: "Montserrat-Light",sans-serif; */
+.white-section{
+    background-color: #fff;
 }
 
 /* Navigation Bar */
@@ -30,7 +52,7 @@ body{
 
 .navbar-brand{
     font-family: "Ubuntu";
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     
 }
@@ -49,37 +71,112 @@ body{
     margin: 5% 3% 5% 0;
 }
 
+
+/* Title Section  */
+
+#title .container-fluid{
+    text-align: left;
+    padding: 3% 15% 7%;
+}
+
 /* Title Image */
 
 .title-img{
-    width: 60%;
+    width: 25%;
     transform: rotate(25deg);
+    position:absolute;
+    right: 25%;
 }
 
 /* Feature section */
 #features{
     padding: 7% 15%;
+    position: relative;
+    /* z-index: 1;  */  /*see the flowchart for the reason not using the z index i.e both are positioned and one of them is below of another so the below element will be on top of first element */
 }
-
-h3{
-    font-family: "Montserrat-Bold";
-    font-size: 1.5rem;  
-    font-weight: bold;
+.feature-title{
+    font-size: 1.5rem;
 }
-
-p{
-    color: #8f8f8f;
-}
-
 .icon{
     color: #ef8172;
     margin-bottom: 1rem;
 }
-.icon :hover{
-    color:#ff4c68;
+.icon:hover{
+    color: #ff4c68;
 }
 
 .feature-box{
-    text-align: center;
     padding: 5%;
 }
+
+
+/* Testimonial section */
+
+#testimonials { 
+    background-color: #ef8172;
+}
+.testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-img{
+    width :10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press{
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+
+.press-logo{
+    width: 15%;
+    margin:20px 20px 15px;
+}
+
+/* Pricing */
+
+#pricing{
+    padding: 100px;
+}
+
+.price-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+.price-btn {
+    width: 100%;
+}
+
+.pricing-col {
+    padding:3% 2% ;
+}
+
+
+/* Cta Section  */
+
+
+
+
+/* Footer  */
+
+.social-icon{
+    margin:20px 10px;
+}
+
+@media (max-width: 1028px){
+    #title{
+        text-align: center;
+    }
+    .title-img{
+        width: 60%;
+        position: static;
+        transform: rotate(0);
+    }
+
+}
+
+
+
